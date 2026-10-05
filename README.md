@@ -45,10 +45,10 @@ The project follows a classic **Kimball Star Schema** architecture designed for 
                     └────────┬────────┘
                              │
                              │
-┌─────────────────┐          ▼          ┌──────────────────┐
-│  dim_suppliers  │ ───► fact_inventory ◄─── │    dim_skus    │
-│    15 rows      │       _daily          │     60 rows     │
-└─────────────────┘       21,600 rows     └──────────────────┘
+┌─────────────────┐          ▼               ┌──────────────────┐
+│  dim_suppliers  │ ───► fact_inventory ◄─── │    dim_skus      │
+│    15 rows      │       _daily             │     60 rows      │
+└─────────────────┘       21,600 rows        └──────────────────┘
                              ▲
                              │
                     ┌────────┴────────┐
